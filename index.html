@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CarPoint - Premium Cars</title>
+    <title>CarPoint - A Garagem dos Seus Sonhos</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -24,12 +24,12 @@
         <ul class="navbar">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#cars">Showroom</a></li>
-          <li><a href="#about">Sobre</a></li>
+          <li><a href="#about">Experiência</a></li>
         </ul>
 
         <div class="nav-right">
           <div class="search-box">
-            <input type="search" id="search-input" placeholder="Buscar modelo (ex: BMW)..." />
+            <input type="search" id="search-input" placeholder="Buscar (ex: Porsche, BMW...)" />
             <button class="search-btn">
               <i class="bx bx-search"></i>
             </button>
@@ -44,95 +44,109 @@
 
       <div class="search-box-mobile">
         <input type="search" id="search-input-mobile" placeholder="Digite para buscar..." />
-        <button><i class="bx bx-search"></i></button>
       </div>
     </header>
 
     <section class="home" id="home">
-      <div class="home-text container">
-        <h1>A garagem dos seus <span>sonhos</span></h1>
-        <p>
-          Conectamos você às máquinas mais potentes do mundo. Dados técnicos precisos, imagens reais
-          e qualidade garantida.
-        </p>
-        <a href="#cars" class="btn">Ver Estoque</a>
+      <div class="container">
+        <div class="home-text">
+          <h1>Dirija a <span>excelência</span> todos os dias.</h1>
+          <p>
+            Uma curadoria exclusiva dos veículos mais desejados do mundo. Performance inigualável,
+            design icônico e a garantia CarPoint.
+          </p>
+          <a href="#cars" class="btn"> Ver Showroom <i class="bx bx-right-arrow-alt"></i> </a>
+        </div>
       </div>
     </section>
 
-    <section class="cars container" id="cars">
-      <div class="heading">
-        <span>Showroom Oficial</span>
-        <h2>Veículos Disponíveis</h2>
-        <p>Explore nossa coleção exclusiva com dados técnicos detalhados.</p>
-      </div>
+    <section class="cars" id="cars">
+      <div class="container">
+        <div class="heading">
+          <span>Coleção 2025</span>
+          <h2>Veículos Disponíveis</h2>
+          <p style="color: #64748b; max-width: 500px; margin: 10px auto">
+            Selecione sua próxima máquina. Dados técnicos verificados e imagens de alta resolução.
+          </p>
+        </div>
 
-      <div id="loading" class="loading-spinner">
-        <div class="spinner"></div>
-        <p>Carregando catálogo...</p>
-      </div>
+        <div id="loading" style="text-align: center; padding: 40px; display: none">
+          <i class="bx bx-loader-alt bx-spin" style="font-size: 2rem; color: #ef233c"></i>
+        </div>
 
-      <div class="cars-container" id="cars-container"></div>
+        <div class="cars-container" id="cars-container"></div>
+      </div>
     </section>
 
-    <section class="about container" id="about">
-      <div class="about-img">
-        <img
-          src="https://images.unsplash.com/photo-1562426509-5044a121aa49?q=80&w=800&auto=format&fit=crop"
-          alt="Sobre a CarPoint"
-        />
-      </div>
-      <div class="about-text">
-        <span>Sobre Nós</span>
-        <h2>Experiência Premium <br />Atendimento Exclusivo</h2>
-        <p>
-          Não vendemos apenas carros, entregamos sonhos sobre quatro rodas. Todos os veículos passam
-          por uma inspeção rigorosa de 150 pontos para garantir sua segurança e satisfação.
-        </p>
-        <a href="#" class="btn">Conheça nossa história</a>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-container-grid">
+          <div class="about-img">
+            <img src="public/img/about.png" alt="Sobre a CarPoint" loading="lazy" />
+          </div>
+          <div class="about-text">
+            <span
+              style="
+                color: #ef233c;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+              "
+              >Nossa Filosofia</span
+            >
+            <h2>Mais que uma venda,<br />um legado.</h2>
+            <p>
+              Na CarPoint, não entregamos apenas chaves. Entregamos sonhos, status e segurança. Cada
+              veículo passa por uma inspeção rigorosa de 150 pontos certificada por engenheiros
+              especializados.
+            </p>
+            <a href="#" class="btn">Conheça Nossa História</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="footer">
-      <div class="footer-container container">
+      <div class="container footer-container">
         <div class="footer-box">
-          <a href="#" class="logo">Car<span>Point</span></a>
-          <p style="margin: 15px 0; font-size: 0.9rem; color: #999">
-            Sua referência em veículos esportivos e de luxo no Brasil.
+          <a href="#" class="logo" style="color: #fff; margin-bottom: 0">Car<span>Point</span></a>
+          <p class="desc">
+            Líder no mercado de seminovos de luxo. Conectamos apaixonados por carros às melhores
+            oportunidades do Brasil.
           </p>
           <div class="social">
             <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
             <a href="#"><i class="bx bxl-youtube"></i></a>
           </div>
         </div>
 
         <div class="footer-box">
           <h3>Navegação</h3>
-          <a href="#home">Home</a>
-          <a href="#cars">Showroom</a>
-          <a href="#about">Sobre</a>
-          <a href="#">Blog</a>
+          <a href="#home">Início</a>
+          <a href="#cars">Veículos</a>
+          <a href="#about">Sobre Nós</a>
+          <a href="#">Blog Automotivo</a>
         </div>
 
         <div class="footer-box">
-          <h3>Legal</h3>
+          <h3>Institucional</h3>
+          <a href="#">Política de Privacidade</a>
           <a href="#">Termos de Uso</a>
-          <a href="#">Privacidade</a>
-          <a href="#">Cookies</a>
-          <a href="#">Fale Conosco</a>
+          <a href="#">Trabalhe Conosco</a>
+          <a href="#">Fale com o CEO</a>
         </div>
 
         <div class="footer-box">
           <h3>Contato</h3>
-          <p><i class="bx bxs-envelope"></i> vendas@carpoint.com</p>
-          <p><i class="bx bxs-phone"></i> (11) 99999-9999</p>
-          <p><i class="bx bxs-map"></i> Av. Paulista, 1000 - SP</p>
+          <p><i class="bx bxs-map"></i> Av. Faria Lima, 4000 - SP</p>
+          <p><i class="bx bxs-phone"></i> (11) 99999-8888</p>
+          <p><i class="bx bxs-envelope"></i> vip@carpoint.com</p>
         </div>
       </div>
 
       <div class="copyright">
-        <p>&#169; CarPoint 2024. Todos os direitos reservados.</p>
+        <p>&#169; CarPoint 2025. Todos os direitos reservados.</p>
       </div>
     </section>
 
@@ -141,16 +155,13 @@
         <button class="close-modal" id="close-modal-btn">&times;</button>
 
         <div class="modal-img">
-          <img id="m-img" src="" alt="Carro" />
+          <img id="m-img" src="" alt="Detalhe do Carro" />
         </div>
 
         <div class="modal-info">
-          <span id="m-brand" class="modal-brand">Marca</span>
+          <span id="m-brand" class="modal-brand">MARCA</span>
           <h2 id="m-model" class="modal-title">Modelo</h2>
-          <p id="m-desc" style="color: #666; line-height: 1.6; margin-bottom: 20px">
-            Este veículo representa o auge da engenharia automotiva, combinando performance
-            excepcional com conforto luxuoso. Certificado pela CarPoint.
-          </p>
+          <span id="m-price" class="price" style="font-size: 2rem; color: #ef233c">R$ 0,00</span>
 
           <div class="modal-specs-list">
             <div class="modal-spec-item">
@@ -170,7 +181,7 @@
               <strong id="m-drive">-</strong>
             </div>
             <div class="modal-spec-item">
-              <span>Consumo</span>
+              <span>Consumo (Urbano)</span>
               <strong id="m-mpg">-</strong>
             </div>
             <div class="modal-spec-item">
@@ -179,8 +190,9 @@
             </div>
           </div>
 
-          <span id="m-price" class="modal-price">R$ 0,00</span>
-          <a href="#" class="btn" style="width: 100%; text-align: center">Tenho Interesse</a>
+          <a href="#" class="btn" style="width: 100%; justify-content: center"
+            >Agendar Test Drive</a
+          >
         </div>
       </div>
     </div>
